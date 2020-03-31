@@ -20,14 +20,13 @@ defmodule RomanNumerals do
     tens      = div(rem(number, 100), 10)
     ones      = rem(number, 10)
 
-    numeral = String.duplicate("M", thousands)
+    numeral   = String.duplicate("M", thousands)
 
-    
-     
-
-
-
-    
+    cond do
+      hundreds == 9 ->
+        numeral = numeral <> "CM"
+      true -> numeral
+    end 
   end
 end
 
