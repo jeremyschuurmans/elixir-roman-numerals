@@ -35,6 +35,8 @@ defmodule RomanNumerals do
         numeral = numeral <> "XC" 
       tens     == 4 ->
         numeral = numeral <> "XL"
+      tens     == 5 ->
+        numeral = numeral <> String.duplicate("L", div(rem(number, 100), 50))
       true -> numeral
     end 
   end
