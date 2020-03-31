@@ -34,6 +34,10 @@ defmodule RomanNumeralsTest do
     assert RomanNumerals.convert(40) == "XL"
   end
 
+  test "it converts 30 to 'XXX'" do
+    assert RomanNumerals.convert(30) == "XXX"
+  end
+
   test "it converts 20 to 'XX'" do
     assert RomanNumerals.convert(20) == "XX"
   end
