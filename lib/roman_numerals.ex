@@ -31,6 +31,8 @@ defmodule RomanNumerals do
         numeral = numeral <> String.duplicate("D", div(rem(number, 1000), 500))
       hundreds == 1 ->
         numeral = numeral <> String.duplicate("C", div(rem(number, 500), 100))
+      tens     == 9 ->
+        numeral = numeral <> "XC" 
       true -> numeral
     end 
   end

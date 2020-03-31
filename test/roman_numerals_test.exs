@@ -21,4 +21,8 @@ defmodule RomanNumeralsTest do
   test "it converts 100 to 'C'" do
     assert RomanNumerals.convert(100) == "C"
   end
+
+  test "it converts 90 to 'XC'" do
+    assert RomanNumerals.convert(90) == "XC"
+  end
 end
