@@ -25,7 +25,9 @@ defmodule RomanNumerals do
     cond do
       hundreds == 9 ->
         numeral = numeral <> "CM"
-      true -> numeral
+      hundreds == 4 ->
+        numeral = numeral <> "CD"
+      true -> numeral = numeral <> String.duplicate("D", div(rem(number, 1000), 500))
     end 
   end
 end

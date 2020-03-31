@@ -8,5 +8,13 @@ defmodule RomanNumeralsTest do
 
   test "it converts 900 to 'CM'" do
     assert RomanNumerals.convert(900) == "CM"
-   end
+  end
+
+  test "it converts 500 to 'D'" do
+    assert RomanNumerals.convert(500) == "D"
+  end
+
+  test "it converts 400 to 'CD'" do
+    assert RomanNumerals.convert(400) == "CD"
+  end
 end
