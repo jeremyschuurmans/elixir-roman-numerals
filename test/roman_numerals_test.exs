@@ -37,4 +37,8 @@ defmodule RomanNumeralsTest do
   test "it converts 10 to 'X'" do
     assert RomanNumerals.convert(10) == "X"
   end
+
+  test "it converts 9 to 'IX'" do
+    assert RomanNumerals.convert(9) == "IX"
+  end
 end

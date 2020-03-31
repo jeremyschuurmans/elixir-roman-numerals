@@ -39,6 +39,8 @@ defmodule RomanNumerals do
         numeral = numeral <> String.duplicate("L", div(rem(number, 100), 50))
       tens     == 1 ->
         numeral = numeral <> String.duplicate("X", div(rem(number, 50), 10))
+      ones     == 9 ->
+        numeral = numeral <> "IX"
       true -> numeral
     end 
   end
