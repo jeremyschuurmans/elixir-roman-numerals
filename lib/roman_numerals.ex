@@ -43,6 +43,8 @@ defmodule RomanNumerals do
         numeral = numeral <> "IX"
       ones     == 4 ->
         numeral = numeral <> "IV"
+      ones     == 1 ->
+        numeral = numeral <> String.duplicate("I", div(number, 1))
       true -> numeral
     end 
   end

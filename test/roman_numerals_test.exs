@@ -45,4 +45,8 @@ defmodule RomanNumeralsTest do
   test "it converts 4 to 'IV'" do
     assert RomanNumerals.convert(4) == "IV"
   end
+
+  test "it converts 1 to 'I'" do
+    assert RomanNumerals.convert(1) == "I"
+  end
 end
