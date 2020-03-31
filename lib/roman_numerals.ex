@@ -27,7 +27,11 @@ defmodule RomanNumerals do
         numeral = numeral <> "CM"
       hundreds == 4 ->
         numeral = numeral <> "CD"
-      true -> numeral = numeral <> String.duplicate("D", div(rem(number, 1000), 500))
+      hundreds == 5 ->
+        numeral = numeral <> String.duplicate("D", div(rem(number, 1000), 500))
+      hundreds == 1 ->
+        numeral = numeral <> String.duplicate("C", div(rem(number, 500), 100))
+      true -> numeral
     end 
   end
 end
