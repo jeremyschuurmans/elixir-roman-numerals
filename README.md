@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.com/palledorous/elixir-roman-numerals.svg?branch=master)](https://travis-ci.com/palledorous/elixir-roman-numerals)
+
+
 # RomanNumerals
 
 **TODO: Add description**

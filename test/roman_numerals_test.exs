@@ -58,10 +58,6 @@ defmodule RomanNumeralsTest do
     assert RomanNumerals.convert(3) == "III"
   end
 
-  test "it converts 2 to 'II'" do
-    assert RomanNumerals.convert(2) == "II"
-  end
-
   test "it converts 1 to 'I'" do
     assert RomanNumerals.convert(1) == "I"
   end
